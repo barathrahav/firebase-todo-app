@@ -1,23 +1,23 @@
 // src/screens/AuthScreen.js
-import React, { useState } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  StyleSheet,
-  ActivityIndicator,
-  TouchableOpacity,
-  KeyboardAvoidingView,
-  Platform,
-  ScrollView,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
+import React, { useState } from "react";
+import {
+  ActivityIndicator,
+  Image,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { auth } from "../config/firebaseConfig";
-import { Image} from "react-native";
 
 export default function AuthScreen() {
   const [mode, setMode] = useState("login"); // "login" | "signup"
@@ -177,12 +177,12 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
     borderRadius: 10,
-    borderColor: "#b6eeeeff",
+    borderColor: "#d0d0d0",
     paddingHorizontal: 12,
     paddingVertical: 10,
     marginBottom: 12,
     fontSize: 16,
-    backgroundColor: "#de8c8cff",
+    backgroundColor: "#fafafa",
   },
   error: {
     color: "red",
