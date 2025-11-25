@@ -177,12 +177,12 @@ const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
     borderRadius: 10,
-    borderColor: "#d0d0d0",
+    borderColor: "#b6eeeeff",
     paddingHorizontal: 12,
     paddingVertical: 10,
     marginBottom: 12,
     fontSize: 16,
-    backgroundColor: "#fafafa",
+    backgroundColor: "#de8c8cff",
   },
   error: {
     color: "red",
